@@ -1,0 +1,136 @@
+/* Designed by Ted Balmer @ MarchTwenty.com */
+
+/* Mobile friendly theme */
+
+body {
+	background: #FFFFFF;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 1px;
+}
+
+div, form, table, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+th {
+	text-align: left;
+}
+
+img {
+	border: 0;
+	margin: 2px 5px;
+}
+
+h2 {
+	font-size: 120%;
+	font-weight: normal;
+}
+
+div#Processing, div#AdjustFont, div#Links, div#Left form, div#ContactError {
+	display: none;
+}
+
+div#Page {
+	min-width: 300px;
+}
+
+div#Left {
+
+}
+
+div#Top {
+	top: 0;
+}
+
+div#Right {
+	margin-top: 20px;
+}
+
+div#Bottom dt {
+	font-weight: bold;
+}
+
+div#Nav {
+	margin: 10px 3px;
+}
+
+div#Nav a {
+	display: block;
+}
+
+div#Content {
+	min-height: 350px;
+}
+
+div#SiteTitle {
+	font-size: 150%;
+}
+
+div#PageTitle {
+	font-size: 125%;
+}
+
+div#EntryTitle {
+	margin-bottom: 10px;
+}
+
+div#Catagories {
+	margin-top: 20px;
+	font-size: 75%;
+}
+
+div#Bookmarks {
+	font-size: 75%;
+}
+
+div#Panels {
+	font-size: 90%;
+	margin-top: 20px;
+}
+
+div#Panels div div {
+	margin-bottom: 5px;
+}
+
+div#Panels a {
+	text-decoration: none;
+}
+
+div#Panels span {
+	display: block;
+	font-size: 75%;
+	padding-left: 10px;
+}
+
+div#Calendar {
+	float: left;
+	width: 45%;
+	height: 200px;
+}
+
+div#Blogs {
+	height: 200px;
+}
+
+div#Links a {
+	display: block;
+}
+
+div#Footer {
+	text-align: center;
+	font-size: 75%;
+	color: #333333;
+}
+
+div#Footer a {
+	color: #000000;
+}

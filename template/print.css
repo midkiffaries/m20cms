@@ -1,0 +1,51 @@
+/* Designed by Ted Balmer @ MarchTwenty.com */
+
+/* Printer friendly theme */
+
+body {
+	background: #FFFFFF;
+	color: #000000;
+	margin: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+}
+
+textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 1px;
+}
+
+div, form, table, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+th {
+	text-align: left;
+}
+
+img {
+	border: 0;
+}
+
+div#Top {
+	height: 50px;
+}
+
+div#Left {
+	width: 100%;
+}
+
+div {
+	background-image: none;
+	background-color: #FFFFFF;
+}
+
+div#SiteTitle a {
+	display: block;
+	text-decoration: none;
+}
+
+div#Processing, div#Right, div#AdjustFont, div#SearchBox, div#Links, div.RSS, div.More, div#ContactError, div#RSS, noscript {
+	display: none;
+}

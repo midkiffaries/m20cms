@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rss version="2.0">
+	<channel>
+		<title>{TITLE}</title>
+		<description>{DESCRIPTION}</description>
+		<copyright>{COPYRIGHT}</copyright>
+		<link>{URL_LINK}</link>
+		<language>en-us</language>
+
+		<itunes:author>{TITLE}</itunes:author>
+		<itunes:subtitle>{DESCRIPTION}</itunes:subtitle>
+		<itunes:summary>{DESCRIPTION}</itunes:summary>
+		<itunes:owner>
+			<itunes:name>{COPYRIGHT}</itunes:name>
+			<itunes:email>{EMAIL}</itunes:email>
+		</itunes:owner>
+		<itunes:image href="{IMG_URL}" />
+		<itunes:category text="{CATAGORY}" />
+		<itunes:explicit>clean</itunes:explicit>
+
+		<image>
+			<alt>Logo</alt>
+			<url>{IMG_URL}</url>
+			<link>{URL_LINK}</link>
+		</image>
+
+		{RSS_ITEMS}
+	</channel>
+</rss>
