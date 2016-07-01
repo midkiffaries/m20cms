@@ -1,0 +1,2 @@
+<p class="Center">The page you requested cannot be found.<br />It may have been removed or is temporarily unavailable.</p>
+<p class="Center"><a href="javascript:history.go(-1);">Please go back to the previous page</a><br /> or <br /><a href="/">Return to the home page</a></p>
