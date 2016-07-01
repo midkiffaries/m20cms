@@ -1,0 +1,587 @@
+/* Designed by Ted Balmer @ marchtwenty.com */
+
+body {
+	background: #FFFFFF url(layout/page_bg.jpg) repeat-x 0 44px;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+div, form, table {
+	margin: 0;
+	padding: 0;
+}
+
+div#Page {
+	min-width: 650px;
+}
+
+div#Header {
+	background: #999999 url(layout/header_bg.jpg) repeat-x 0 0;
+	width: 100%;
+	height: 44px;
+}
+
+div#Header h1 {
+	font-size: 150%;
+	font-weight: normal;
+	margin: 0;
+	padding: 5px 0 0 80px;
+	color: #FFFFFF;
+	float: left;
+	text-shadow: 2px 2px 2px #333333;
+}
+
+div#Header dl {
+	margin: 0 8px 0 0;
+}
+
+div#Header dd {
+	margin: 10px 0 0 0;
+	float: right;
+}
+
+div#Header dd a, div#Header dd a:visited {
+	padding: 3px 8px;
+	color: #FFFFFF;
+}
+
+div#Header dd a:hover, div#Header dd a:active {
+	color: #FFCC00;
+	text-decoration: none;
+}
+
+div#Logo {
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	background: transparent url(layout/logo.png) no-repeat 0 0;
+	width: 83px;
+	height: 75px;
+}
+
+div#Nav {
+	text-align: center;
+	height: 40px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+div#Nav dl {
+	margin: 0;
+}
+
+div#Nav dd {
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+div#Nav dd a, div#Nav dd a:visited {
+	color: #000000;
+	padding: 3px 9px;
+}
+
+div#Nav dd a:hover, div#Nav dd a:active {
+	color: #FFCC00;
+	text-decoration: none;
+}
+
+div#PageTitle {
+	font-size: 300%;
+	color: #DDDDDD;
+	margin: -10px 0 0 10px;
+	z-index: 1;
+}
+
+div#Content {
+	margin: -46px 20px 0 20px;
+}
+
+div#Content a, div#Content a:visited {
+	color: #006600;
+}
+
+div#Content a:hover, div#Content a:active {
+	color: #BB0000;
+	text-decoration: none;
+}
+
+div#Create {
+	float: right;
+}
+
+div#Create input {
+	width: 165px;
+}
+
+div#Create a, div#Create a:visited {
+	background: transparent url(graphics/upload_sm.png) no-repeat 0 50%;
+	padding-left: 18px;
+	color: #CC0000;
+}
+
+div#Create a:hover {
+	color: #FF6666;
+}
+
+div#Order {
+	font-size: 90%;
+	color: #666666;
+	padding: 0 0 2px 4px;
+}
+
+div#errorReport {
+	color: #990000;
+	font-size: 80%;
+	font-style: italic;
+	text-align: center;
+}
+
+div#errorReport ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#errorReport li {
+	padding: 4px;
+}
+
+div#listTable {
+	min-height: 60px;
+}
+
+div#listTable table {
+	text-align: left;
+	font-size: 80%;
+	border: 1px solid #DDDDDD;
+	padding: 2px;
+}
+
+div#listTable input.Del {
+	color: #BB0000;
+	width: 25px;
+}
+
+div#listTable tr.pS1 {
+	background-color: #EEEEEE;
+}
+
+div#listTable tr.pS2 {
+	background-color: #DDDDDD;
+}
+
+div#listTable table#List tr:hover {
+	background-color: #FFFFBB;
+}
+
+div#listTable table#List tr:hover th {
+	background-color: #FFFFFF;
+}
+
+span#Throbber {
+	color: #444444;
+	background: transparent url(graphics/throbber2.gif) no-repeat 0 0;
+	padding-left: 20px;
+	margin: 30px 20px;
+}
+
+div#totalEntries {
+	text-align: right;
+	float: right;
+	margin-right: 5px;
+	font-size: 90%;
+}
+
+div#tableNav {
+	padding-left: 4px;
+}
+
+div#totalEntries span {
+	font-weight: bold;
+}
+
+div#overlay {
+	visibility: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 98;
+	background: transparent url(layout/overlay.png) repeat 0 0;
+}
+
+div#inputCard {
+	border: 1px solid #999999;
+	background: #E9E9E9 url(layout/inputcard_bg.png) repeat-x 100% 100%;
+	padding: 0 10px 10px 10px;
+	width: 610px;
+	position: fixed;
+	top: 35px;
+	left: 21%;
+	font-size: 85%;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 2px 5px 7px #AAAAAA;
+}
+
+div#inputCard p#cardTitle {
+	font-size: 120%;
+	letter-spacing: 2px;
+	text-align: center;
+	margin: 4px;
+	padding: 1px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+div#inputCard table {
+	text-align: left;
+}
+
+div#inputCard table input {
+	width: 95%;
+	margin: 0;
+}
+
+div#inputCard textarea, iframe {
+	width: 100%;
+	height: 280px;
+	margin: 0;
+	padding: 2px;
+	font-size: 90%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#inputCard table th {
+	text-align: right;
+	font-weight: normal;
+}
+
+div#inputCard div#textArea {
+	width: 99%;
+}
+
+div#inputCard p input {
+	width: 100px;
+}
+
+div#checkBoxes {
+	padding: 2px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+}
+
+div#checkBoxes label {
+	margin-right: 16px;
+}
+
+div#checkBoxes input#textLength {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	text-align: right;
+	margin-left: 25px;
+}
+
+div#previewBox {
+	text-align: left;
+	padding: 4px;
+	display: none;
+	border: 1px solid #CC0000;
+	background: #FFFFFF;
+	width: 99%;
+	height: 110px;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+div#uploadFrame {
+	border: 1px solid #999999;
+	display: none;
+	width: 580px;
+	position: fixed;
+	top: 45px;
+	left: 21%;
+	font-size: 85%;
+}
+
+span#uResponse {
+	margin-left: 25px;
+}
+
+div#imageBox {
+	display: none;
+	position: absolute;
+	top: 44px;
+	left: 200px;
+	border: 1px solid #666666;
+	background: #FFFFFF;
+	z-index: 50;
+	padding: 10px;
+}
+
+div#calendarPop {
+	position: fixed;
+	visibility: hidden;
+	background: #FFFFFF;
+	margin-left: 155px;
+}
+
+table#calendar {
+	margin-top: 3px;
+	width: 100%;
+	background: #F5F5F5;
+}
+
+table#calendar a {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+}
+
+table#calendar th {
+	width: 14%;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+table#calendar th.weekend {
+	color: #999999;
+}
+
+table#calendar td {
+	height: 65px;
+	border: 1px solid #EEEEEE;
+	font-size: 75%;
+	background: #FFFFFF;
+ 	vertical-align: top;
+	overflow: auto;
+}
+
+table#calendar td:hover {
+	background-color: #FFFFBB;
+}
+
+table#calendar td:hover span {
+	background-color: #FFFFDE;
+}
+
+table#calendar td span {
+	color: #666666;
+	background: #FAFAFA;
+	display: block;
+	font-size: 120%;
+	border-bottom: 1px dotted #DDDDDD;
+}
+
+table#calendar td a {
+	display: block;
+	width: 100%;
+}
+
+table#calendar td span a span {
+	display: inline;
+	font-size: 100%;
+	visibility: hidden;
+	margin-left: 5px;
+}
+
+table#calendar td a:hover {
+	color: #CC0000;
+	background: #FFFFFF;
+}
+
+table#calendar td span a:hover {
+	color: #009900;
+	font-weight: bold;
+ 	background: transparent url(graphics/add.png) no-repeat 100% 50%;
+}
+
+table#calendar td span a:hover span {
+	color: #009900;
+	visibility: visible;
+	padding-left: 8%;
+}
+
+table#calendar td.Today {
+	background: #FFEEEE;
+}
+
+table#calendar td.Today span {	background: #FFF6F6;
+	border-bottom: 1px dotted #FFDDDD;
+}
+
+table#calendar th.calMonth {
+	font-size: 170%;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+table#calendar th.calLastMonth, table#calendar th.calNextMonth {
+	font-size: 120%;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+table#calendar th.calNextMonth {
+	text-align: right;
+}
+
+div#UploadBox {
+	border: 1px solid #CCCCCC;
+	background: #E9E9E9 url(layout/inputcard_bg.png) repeat-x 100% 100%;
+	padding: 6px 15px;
+	margin: 20px 35px;
+}
+
+div#Footer {
+	padding: 25px 0;
+	background: transparent url(layout/footer_bg.png) no-repeat 99% 50%;
+	text-align: center;
+	font-size: 80%;
+	color: #777777;
+}
+
+div#Footer a {
+	color: #555555;
+}
+
+div#Version {
+	text-align: right;
+	font-size: 60%;
+	color: #AAAAAA;
+	margin: 5px 20px;
+}
+
+div#Processing {
+	z-index: 99;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #BB0000;
+	color: #FFFFFF;
+	font-size: 85%;
+	padding: 2px 4px;
+	display: none;
+}
+
+div#loginBox {
+	border: 1px solid #999999;
+	background: #E9E9E9 url(layout/inputcard_bg.png) repeat-x 100% 100%;
+	padding: 6px 10px;
+	margin: 20px auto;
+	width: 350px;
+}
+
+div#loginBox h2 {
+	font-weight: normal;
+	font-size: 120%;
+	letter-spacing: 1px;
+	margin: 0 0 4px 0;
+	padding: 1px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+div#loginBox p {
+	text-align: right;
+	margin: 0;
+}
+
+div#loginBox table input {
+	width: 99%;
+}
+
+div#loginBox p input {
+	margin: 3px;
+}
+
+img, table {
+	border: 0;
+}
+
+noscript {
+	margin-left: 40px;
+	color: #DD0000;
+}
+
+label:hover, acronym:hover {
+	color: #666666;
+}
+
+a.email {
+	background: transparent url(graphics/email.png) no-repeat 100% 50%;
+	padding-right: 17px;
+}
+
+ul.links a, a.link {
+	background: transparent url(graphics/link.png) no-repeat 100% 50%;
+	padding-right: 14px;
+}
+
+ul.links li {
+	line-height: 150%;
+}
+
+.Center, .center {
+	text-align: center;
+}
+
+.Left, .left {
+	text-align: left;
+}
+
+.Right, .right {
+	text-align: right;
+}
+
+.Red, .red {
+	color: #AA0000;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.noMargin {
+	margin: 0;
+}
+
+.Hide {
+	display: none;
+}
+
+.back {
+	background: transparent url(graphics/arrow_l.png) no-repeat 0 50%;
+	padding-left: 20px;
+}
+
+
+/* -- IE6 Hacks -- */
+
+* html div, * html span, * html img {
+	behavior: url("template/iepngfix.htc");
+}
+
+* html div#overlay {
+	position: absolute;
+	background-image: url(layout/overlay_ie.png);
+	width: 103%;
+	height: 800px;
+}
+
+* html div#inputCard {
+	position: absolute;
+}
+
+* html div#calendarPop {
+	position: absolute;
+}
+
+* html table#calendar th.calLastMonth, table#calendar th.calNextMonth {
+	width: 10%;
+}
